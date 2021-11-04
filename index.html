@@ -266,7 +266,7 @@ section .location {
 }
 
 #header h1.name {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 100;
     line-height: 100%;
 }
@@ -507,7 +507,7 @@ ul.courses li:hover {
 #skills .item,
 #interests .item {
     width: 13em;
-    padding: 0 .5em .5em 0;
+    padding: 0;
     border-bottom: none;
 }
 
@@ -705,7 +705,7 @@ ul.courses li:hover {
         padding: 1rem 0;
     }
     .section {
-        margin: .5rem 0;
+        margin: .4rem 0;
         padding: 0;
     }
     .section header {
@@ -839,42 +839,45 @@ ul.courses li:hover {
     	</header>
     	<section id="skills">
     		<div class="item">
-    			<h3 class="name">
+    			<h4 class="name">
     				Programming Languages
-    			</h3>
+    			</h4>
     			 			<ul class="keywords">
-    				<li>Python 3+</li>
-    				<li>JavaScript ES6</li>
-    				<li>Java 8+</li>
+    				<li>Python</li>
+    				<li>TypesScript</li>
+    				<li>JavaScript</li>
+    				<li>Java</li>
+    				<li>Dart</li>
     			</ul>
     		</div>
     		<div class="item">
-    			<h3 class="name">
+    			<h4 class="name">
     				Software Frameworks
-    			</h3>
+    			</h4>
     			 			<ul class="keywords">
-    				<li>Angular</li>
-    				<li>AngularJS</li>
     				<li>ReactJS</li>
-    				<li>Spring</li>
-    				<li>Flask</li>
-    				<li>Git</li>
+    				<li>Angular</li>
+    				<li>Node.JS</li>
+    				<li>Serverless</li>
+    				<li>Express</li>
+    				<li>Flutter</li>
     			</ul>
     		</div>
     		<div class="item">
-    			<h3 class="name">
+    			<h4 class="name">
     				Core Software
-    			</h3>
+    			</h4>
     			 			<ul class="keywords">
+    				<li>Git</li>
     				<li>Debian/Ubuntu/Mint</li>
     				<li>Visual Studio Code</li>
     				<li>IntelliJ</li>
     			</ul>
     		</div>
     		<div class="item">
-    			<h3 class="name">
+    			<h4 class="name">
     				Databases
-    			</h3>
+    			</h4>
     			 			<ul class="keywords">
     				<li>MongoDB</li>
     				<li>SQL</li>
@@ -945,34 +948,6 @@ ul.courses li:hover {
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Projects </h2>
-      </header>
-      <section id="projects">
-        <section class="project-item">
-           
-    
-          <header>
-            <div class="position">www.thePriceBot.net - The Price Robot</div>
-          </header>
-          <span class="website">
-            <a target="_blank" href="http://www.thepricebot.net">http://www.thepricebot.net</a>
-          </span>
-          <div class="item">
-            <div class="summary">
-              <p><p>The Lowest Price on Every Item - The PriceBot is a website dedicated to providing you the tools and resources to make well informed purchase decisions. With millions of price points and historical comparisons, our algorithms will help you get the right price.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Python - Use scrapy to gather prices from 10 different sources and transform it for storage in MongoDB.</p></li>
-                <li><p>MongoDB - Utilize Replica Sets and Indexing to achieve top performance on a collection of millions of items.</p></li>
-                <li><p>Elasticsearch - Serve as backend for serving search results from website www.thepricebot.net.</p></li>
-                <li><p>ReactJS - Front end design, utilize Higher-Order Components (HOC) to display data.</p></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
         <h2 class='section-title'>Related Experience </h2>
       </header>
     
@@ -982,7 +957,7 @@ ul.courses li:hover {
            
     
     			<header>
-    				<div class="position">Software Engineer</div>
+    				<div class="position">Senior Software Engineer</div>
     				<div class="company">Capital One</div>
     				<div class="date">
     				  <span class="startDate">April 2020</span> 
@@ -999,12 +974,12 @@ ul.courses li:hover {
         		<a target="_blank" href="http://www.capitalone.com">http://www.capitalone.com</a>
         	</span>      	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Use JavaScript (NodeJS and React) and Postgres SQL to develop a web-based wealth management and financial planning tool.</p></p>
+              <p><p>Use TypeScript (NodeJS and React), Postgres SQL, and AWS to develop a web-based wealth management and financial planning tool.</p></p>
             </div>
             <ul class="highlights">
                 <li><p>Assist in development of trading algorithm to ensure firm meets fiduciary duties to clients.</p></li>
                 <li><p>Responsible for implementing features from abstract wireframes all the way to use in production.</p></li>
-                <li><p>Write unit tests in Enzyme and Tape to ensure 90%+ code coverage.</p></li>
+                <li><p>Write unit tests in Enzyme and Tape to ensure 80%+ code coverage.</p></li>
                 <li><p>Deploy using Serverless/AWS Lambda to ensure high avalability and scalability.</p></li>
             </ul>
         	</div>
@@ -1102,34 +1077,32 @@ ul.courses li:hover {
             </ul>
         	</div>
         </section>
-        <section class="work-item">
-    
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects </h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
            
     
-    			<header>
-    				<div class="position">Operations Manager</div>
-    				<div class="company">City Bikes</div>
-    				<div class="date">
-    				  <span class="startDate">March 2015</span> 
-    					<span class="endDate">- December 2015</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-    				<span class="city">Washington,</span>
-    				<span class="region">DC</span> 
-    			</span>
-        	<span class="website">
-        		<a target="_blank" href="http://www.citybikes.com">http://www.citybikes.com</a>
-        	</span>      	<div class="item" id="work-item">
+          <header>
+            <div class="position">www.thePriceBot.net - The Price Robot</div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="http://www.thepricebot.net">http://www.thepricebot.net</a>
+          </span>
+          <div class="item">
             <div class="summary">
-              <p><p>Followed orders directed by the CEO and General Manager in the daily operations of a four-store bicycle sales and service retail chain.</p></p>
+              <p><p>The Lowest Price on Every Item - The PriceBot is a website dedicated to providing you the tools and resources to make well informed purchase decisions. With millions of price points and historical comparisons, our algorithms will help you get the right price.</p></p>
             </div>
             <ul class="highlights">
-                <li><p>Managed and supervised three employees including handyman and two warehouse employees.</p></li>
+                <li><p>Python - Use scrapy to gather prices from 10 different sources and transform it for storage in MongoDB.</p></li>
+                <li><p>Elasticsearch - Serve as backend for serving search results from website www.thepricebot.net.</p></li>
+                <li><p>ReactJS - Front end design, utilize Higher-Order Components (HOC) to display data.</p></li>
             </ul>
-        	</div>
+          </div>
         </section>
       </section>
     </section>
@@ -1139,9 +1112,9 @@ ul.courses li:hover {
       </header>
       <section id="languages">
         <div class="display">
-          <h3 class="language">
+          <h4 class="language">
             English
-          </h3>
+          </h4>
           <div class="item">
             <div class="level fluency native speaker">
               <em>Native Speaker</em>
@@ -1150,9 +1123,9 @@ ul.courses li:hover {
           </div>
         </div>
         <div class="display">
-          <h3 class="language">
+          <h4 class="language">
             Mandarin Chinese
-          </h3>
+          </h4>
           <div class="item">
             <div class="level fluency fluent">
               <em>Fluent</em>
@@ -1161,9 +1134,9 @@ ul.courses li:hover {
           </div>
         </div>
         <div class="display">
-          <h3 class="language">
+          <h4 class="language">
             Spanish
-          </h3>
+          </h4>
           <div class="item">
             <div class="level fluency intermediate">
               <em>Intermediate</em>
